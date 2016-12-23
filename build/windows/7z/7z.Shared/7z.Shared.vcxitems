@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{15fa56a6-18d1-4672-a8ad-64deb8d5b6f8}</ItemsProjectGuid>
+    <ItemsRootNamespace>_7z</ItemsRootNamespace>
+    <ItemsProjectName>7z.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7z.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zAlloc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zBuf.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zCrc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zFile.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zTypes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zVersion.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Bcj2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Bra.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Compiler.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\CpuArch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Delta.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Lzma2Dec.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\LzmaDec.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Ppmd.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Ppmd7.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Precomp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\7zDecoder.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zAlloc.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zArcIn.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zBuf.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zCrc.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zCrcOpt.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zDec.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zFile.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\7zStream.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Bcj2.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Bra.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Bra86.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\BraIA64.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\CpuArch.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Delta.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Lzma2Dec.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\LzmaDec.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Ppmd7.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Ppmd7Dec.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\7z\core\Precomp.c" />
+  </ItemGroup>
+</Project>

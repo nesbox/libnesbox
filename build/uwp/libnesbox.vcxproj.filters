@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="nes">
+      <UniqueIdentifier>{9e7bb9fa-e308-4fa8-ae26-ce2027fa3110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="snes">
+      <UniqueIdentifier>{44465098-6566-4f53-9cfa-772ee6500dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sega">
+      <UniqueIdentifier>{a2dfea8b-62a0-42df-ae06-9b29edcfe4af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gb">
+      <UniqueIdentifier>{22e3fa7c-d415-41e3-a835-1c2a4291e520}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\..\src\nes\core\nesppu.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\file.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\nes.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\mmc5.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\x6502.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\video.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\vsuni.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\utils\guid.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\utils\md5.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\utils\memory.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\utils\crc32.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\utils\endian.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\utils\general.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\utils\ConvertUTF.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\unif.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\sound.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\state.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\palette.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\simple.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\99.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\emu2413.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\mmc2and4.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\85.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\86.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\89.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\91.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\92.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\97.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\8.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\77.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\79.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\80.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\82.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\83.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\69.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\71.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\72.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\73.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\75.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\76.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\6.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\60.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\61.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\62.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\65.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\67.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\41.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\42.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\46.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\50.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\51.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\59.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\24and26.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\25.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\27.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\32.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\33.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\40.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\255.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\232.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\234.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\241.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\242.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\244.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\246.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\225.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\227.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\228.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\229.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\230.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\231.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\21.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\22.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\212.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\213.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\214.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\215.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\217.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\17.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\18.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\193.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\201.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\202.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\203.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\204.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\16.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\mappers\151.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\suborkb.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\toprider.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\mahjong.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\mouse.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\oekakids.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\powerpad.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\quiz.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\shadow.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\bworld.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\cursor.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\fkb.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\ftrainer.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\hypershot.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input\arkanoid.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\ines.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\input.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\drawing.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\fceu.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\cart.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\tengen.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\tf-1201.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\smb2j.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\subor.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\super24.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\supervision.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\t-227-1.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\t-262.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\n625092.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\novel.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\sachen.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\sc-127.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\sheroes.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\sl1632.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\mmc1.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\mmc3.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\n106.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\n-c22m.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\karaoke.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\kof97.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\konami-qtai.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\ks7032.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\malee.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\edu2000.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\fk23c.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\ghostbusters63in1.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\gs-2004.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\gs-2013.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\h2288.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\bs-5.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\copyfami_mmc3.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\dance.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\datalatch.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\deirom.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\dream.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\bandai.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\bmc13in1jy110.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\bmc42in1r.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\bmc64in1nr.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\bmc70in1.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\bonza.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\__dummy_mapper.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\95.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\a9746.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\addrlatch.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\ax5705.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\68.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\88.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\90.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\8157.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\8237.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\830118C.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\3d-block.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\43.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\57.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\235.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\603-5052.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\411120-c.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\23.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\187.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\189.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\199.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\208.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\222.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\177.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\178.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\179.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\183.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\185.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\186.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\15.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\120.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\121.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\164.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\175.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\176.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\01-222.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\103.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\106.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\108.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\112.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nes\core\boards\117.cpp">
+      <Filter>nes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\gameboy.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\GbaSound.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\GbaGlobals.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\GbaFlash.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\GbaCheats.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\bios.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\elf.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\gbafilter.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\agbprint.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\armdis.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\Sram.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\Mode2.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\Mode3.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\Mode4.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\Mode5.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\Mode0.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\Mode1.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\GBAGfx.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\GBALink.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\GBASockClient.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\GBA.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\GBA-arm.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\GBA-thumb.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\EEprom.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gba\CheatSearch.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gb\gbSGB.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gb\gbSound.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gb\gbGfx.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gb\gbGlobals.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gb\gbMemory.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gb\gbPrinter.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gb\gbDis.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gb\GB.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\gb\gbCheats.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\apu\Gb_Apu.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\apu\Gb_Apu_State.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\apu\Gb_Oscs.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\apu\Multi_Buffer.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\apu\Blip_Buffer.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\apu\Effects_Buffer.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\gb\core\Util.cpp">
+      <Filter>gb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\sega.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\vdp.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\ras.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\save.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\sn76496.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\musa\m68kopnz.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\musa\m68kops.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\myfm.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\musa\m68kopac.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\musa\m68kopdm.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\musa\m68kcpu.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\mem.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\fm.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\md.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\mdfr.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sega\core\cz80\cz80.cpp">
+      <Filter>sega</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\soundux.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\snes.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\memmap.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\ppu.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\gfx.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\cpuops.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\cpuexec.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\conffile.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\reader.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\server.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\netplay.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\controls.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\tile.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\spc7110.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\srtc.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\spc700.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\snapshot.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\snes9x.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\seta010.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\seta011.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\seta018.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\snaporig.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\sdd1emu.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\seta.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\screenshot.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\sdd1.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\sa1.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\sa1cpu.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\obc1.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\movie.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\loadzip.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\logger.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\globals.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\fxdbg.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\fxemu.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\fxinst.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\dsp1.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\debug.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\dma.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\crosshairs.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\data.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\cpu.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\cheats.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\cheats2.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\clip.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\bsx.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\c4.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\c4emu.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\apu.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\apudebug.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\snes\core\2xsai.cpp">
+      <Filter>snes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\nesbox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+</Project>

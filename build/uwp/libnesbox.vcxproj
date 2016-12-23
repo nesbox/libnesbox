@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98d40bac-ba60-4050-b213-be989e9d3738}</ProjectGuid>
+    <Keyword>StaticLibrary</Keyword>
+    <ProjectName>libnesbox</ProjectName>
+    <RootNamespace>libnesbox</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>FINAL_VERSION;NO_PNG;NO_LINK;C_CORE;_CRT_SECURE_NO_WARNINGS;MITSHM;SPC700_SHUTDOWN;NOASM;NEW_COLOUR_BLENDING;HAVE_MKSTEMP;USE_DGA_EXTENSION;USE_VIDMODE_EXTENSION;HAVE_SYS_IOCTL_H;HAVE_STDINT_H;__FLASH__;__WIN32__;WIN32;WITH_CZ80;WITH_MUSA;WIN32;NDEBUG;MSVC;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINDOWS=0x0410;WINVER=0x0410;NETWORK;LSB_FIRST;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>FINAL_VERSION;NO_PNG;NO_LINK;C_CORE;_CRT_SECURE_NO_WARNINGS;MITSHM;SPC700_SHUTDOWN;NOASM;NEW_COLOUR_BLENDING;HAVE_MKSTEMP;USE_DGA_EXTENSION;USE_VIDMODE_EXTENSION;HAVE_SYS_IOCTL_H;HAVE_STDINT_H;__FLASH__;__WIN32__;WIN32;WITH_CZ80;WITH_MUSA;WIN32;NDEBUG;MSVC;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINDOWS=0x0410;WINVER=0x0410;NETWORK;LSB_FIRST;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>FINAL_VERSION;NO_PNG;NO_LINK;C_CORE;_CRT_SECURE_NO_WARNINGS;MITSHM;SPC700_SHUTDOWN;NOASM;NEW_COLOUR_BLENDING;HAVE_MKSTEMP;USE_DGA_EXTENSION;USE_VIDMODE_EXTENSION;HAVE_SYS_IOCTL_H;HAVE_STDINT_H;__FLASH__;__WIN32__;WIN32;WITH_CZ80;WITH_MUSA;WIN32;NDEBUG;MSVC;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINDOWS=0x0410;WINVER=0x0410;NETWORK;LSB_FIRST;_ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>FINAL_VERSION;NO_PNG;NO_LINK;C_CORE;_CRT_SECURE_NO_WARNINGS;MITSHM;SPC700_SHUTDOWN;NOASM;NEW_COLOUR_BLENDING;HAVE_MKSTEMP;USE_DGA_EXTENSION;USE_VIDMODE_EXTENSION;HAVE_SYS_IOCTL_H;HAVE_STDINT_H;__FLASH__;__WIN32__;WIN32;WITH_CZ80;WITH_MUSA;WIN32;NDEBUG;MSVC;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINDOWS=0x0410;WINVER=0x0410;NETWORK;LSB_FIRST;_ARM_WINAPI_PARTITION_DESKTOP_SDK_AVAILABLE=1;%(ClCompile.PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>FINAL_VERSION;NO_PNG;NO_LINK;C_CORE;_CRT_SECURE_NO_WARNINGS;MITSHM;SPC700_SHUTDOWN;NOASM;NEW_COLOUR_BLENDING;HAVE_MKSTEMP;USE_DGA_EXTENSION;USE_VIDMODE_EXTENSION;HAVE_SYS_IOCTL_H;HAVE_STDINT_H;__FLASH__;__WIN32__;WIN32;WITH_CZ80;WITH_MUSA;WIN32;NDEBUG;MSVC;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINDOWS=0x0410;WINVER=0x0410;NETWORK;LSB_FIRST;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>FINAL_VERSION;NO_PNG;NO_LINK;C_CORE;_CRT_SECURE_NO_WARNINGS;MITSHM;SPC700_SHUTDOWN;NOASM;NEW_COLOUR_BLENDING;HAVE_MKSTEMP;USE_DGA_EXTENSION;USE_VIDMODE_EXTENSION;HAVE_SYS_IOCTL_H;HAVE_STDINT_H;__FLASH__;__WIN32__;WIN32;WITH_CZ80;WITH_MUSA;WIN32;NDEBUG;MSVC;_CRT_SECURE_NO_DEPRECATE;_WIN32_WINDOWS=0x0410;WINVER=0x0410;NETWORK;LSB_FIRST;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\gb\core\apu\Blip_Buffer.cpp" />
+    <ClCompile Include="..\..\src\gb\core\apu\Effects_Buffer.cpp" />
+    <ClCompile Include="..\..\src\gb\core\apu\Gb_Apu.cpp" />
+    <ClCompile Include="..\..\src\gb\core\apu\Gb_Apu_State.cpp" />
+    <ClCompile Include="..\..\src\gb\core\apu\Gb_Oscs.cpp" />
+    <ClCompile Include="..\..\src\gb\core\apu\Multi_Buffer.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\agbprint.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\armdis.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\bios.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\CheatSearch.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\EEprom.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\elf.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\GBA-arm.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\GBA-thumb.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\GBA.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\GbaCheats.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\gbafilter.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\GbaFlash.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\GBAGfx.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\GbaGlobals.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\GBALink.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\GBASockClient.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\GbaSound.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\Mode0.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\Mode1.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\Mode2.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\Mode3.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\Mode4.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\Mode5.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gba\Sram.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gb\GB.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gb\gbCheats.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gb\gbDis.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gb\gbGfx.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gb\gbGlobals.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gb\gbMemory.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gb\gbPrinter.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gb\gbSGB.cpp" />
+    <ClCompile Include="..\..\src\gb\core\gb\gbSound.cpp" />
+    <ClCompile Include="..\..\src\gb\core\Util.cpp" />
+    <ClCompile Include="..\..\src\gb\gameboy.cpp" />
+    <ClCompile Include="..\..\src\nesbox.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\01-222.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\103.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\106.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\108.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\112.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\117.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\120.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\121.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\15.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\164.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\175.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\176.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\177.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\178.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\179.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\183.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\185.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\186.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\187.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\189.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\199.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\208.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\222.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\23.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\235.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\3d-block.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\411120-c.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\43.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\57.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\603-5052.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\68.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\8157.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\8237.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\830118C.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\88.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\90.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\95.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\a9746.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\addrlatch.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\ax5705.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\bandai.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\bmc13in1jy110.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\bmc42in1r.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\bmc64in1nr.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\bmc70in1.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\bonza.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\bs-5.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\copyfami_mmc3.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\dance.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\datalatch.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\deirom.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\dream.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\edu2000.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\fk23c.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\ghostbusters63in1.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\gs-2004.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\gs-2013.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\h2288.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\karaoke.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\kof97.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\konami-qtai.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\ks7032.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\malee.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\mmc1.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\mmc3.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\mmc5.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\n-c22m.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\n106.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\n625092.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\novel.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\sachen.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\sc-127.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\sheroes.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\sl1632.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\smb2j.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\subor.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\super24.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\supervision.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\t-227-1.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\t-262.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\tengen.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\tf-1201.cpp" />
+    <ClCompile Include="..\..\src\nes\core\boards\__dummy_mapper.cpp" />
+    <ClCompile Include="..\..\src\nes\core\cart.cpp" />
+    <ClCompile Include="..\..\src\nes\core\drawing.cpp" />
+    <ClCompile Include="..\..\src\nes\core\fceu.cpp" />
+    <ClCompile Include="..\..\src\nes\core\file.cpp" />
+    <ClCompile Include="..\..\src\nes\core\ines.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\arkanoid.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\bworld.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\cursor.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\fkb.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\ftrainer.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\hypershot.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\mahjong.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\mouse.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\oekakids.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\powerpad.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\quiz.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\shadow.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\suborkb.cpp" />
+    <ClCompile Include="..\..\src\nes\core\input\toprider.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\151.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\16.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\17.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\18.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\193.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\201.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\202.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\203.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\204.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\21.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\212.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\213.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\214.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\215.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\217.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\22.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\225.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\227.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\228.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\229.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\230.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\231.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\232.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\234.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\241.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\242.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\244.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\246.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\24and26.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\25.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\255.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\27.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\32.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\33.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\40.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\41.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\42.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\46.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\50.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\51.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\59.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\6.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\60.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\61.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\62.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\65.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\67.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\69.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\71.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\72.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\73.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\75.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\76.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\77.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\79.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\8.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\80.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\82.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\83.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\85.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\86.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\89.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\91.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\92.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\97.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\99.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\emu2413.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\mmc2and4.cpp" />
+    <ClCompile Include="..\..\src\nes\core\mappers\simple.cpp" />
+    <ClCompile Include="..\..\src\nes\core\nesppu.cpp" />
+    <ClCompile Include="..\..\src\nes\core\palette.cpp" />
+    <ClCompile Include="..\..\src\nes\core\sound.cpp" />
+    <ClCompile Include="..\..\src\nes\core\state.cpp" />
+    <ClCompile Include="..\..\src\nes\core\unif.cpp" />
+    <ClCompile Include="..\..\src\nes\core\utils\ConvertUTF.cpp" />
+    <ClCompile Include="..\..\src\nes\core\utils\crc32.cpp" />
+    <ClCompile Include="..\..\src\nes\core\utils\endian.cpp" />
+    <ClCompile Include="..\..\src\nes\core\utils\general.cpp" />
+    <ClCompile Include="..\..\src\nes\core\utils\guid.cpp" />
+    <ClCompile Include="..\..\src\nes\core\utils\md5.cpp" />
+    <ClCompile Include="..\..\src\nes\core\utils\memory.cpp" />
+    <ClCompile Include="..\..\src\nes\core\video.cpp" />
+    <ClCompile Include="..\..\src\nes\core\vsuni.cpp" />
+    <ClCompile Include="..\..\src\nes\core\x6502.cpp" />
+    <ClCompile Include="..\..\src\nes\nes.cpp" />
+    <ClCompile Include="..\..\src\sega\core\cz80\cz80.cpp" />
+    <ClCompile Include="..\..\src\sega\core\fm.cpp" />
+    <ClCompile Include="..\..\src\sega\core\md.cpp" />
+    <ClCompile Include="..\..\src\sega\core\mdfr.cpp" />
+    <ClCompile Include="..\..\src\sega\core\mem.cpp" />
+    <ClCompile Include="..\..\src\sega\core\musa\m68kcpu.cpp" />
+    <ClCompile Include="..\..\src\sega\core\musa\m68kopac.cpp" />
+    <ClCompile Include="..\..\src\sega\core\musa\m68kopdm.cpp" />
+    <ClCompile Include="..\..\src\sega\core\musa\m68kopnz.cpp" />
+    <ClCompile Include="..\..\src\sega\core\musa\m68kops.cpp" />
+    <ClCompile Include="..\..\src\sega\core\myfm.cpp" />
+    <ClCompile Include="..\..\src\sega\core\ras.cpp" />
+    <ClCompile Include="..\..\src\sega\core\save.cpp" />
+    <ClCompile Include="..\..\src\sega\core\sn76496.cpp" />
+    <ClCompile Include="..\..\src\sega\core\vdp.cpp" />
+    <ClCompile Include="..\..\src\sega\sega.cpp" />
+    <ClCompile Include="..\..\src\snes\core\2xsai.cpp" />
+    <ClCompile Include="..\..\src\snes\core\apu.cpp" />
+    <ClCompile Include="..\..\src\snes\core\apudebug.cpp" />
+    <ClCompile Include="..\..\src\snes\core\bsx.cpp" />
+    <ClCompile Include="..\..\src\snes\core\c4.cpp" />
+    <ClCompile Include="..\..\src\snes\core\c4emu.cpp" />
+    <ClCompile Include="..\..\src\snes\core\cheats.cpp" />
+    <ClCompile Include="..\..\src\snes\core\cheats2.cpp" />
+    <ClCompile Include="..\..\src\snes\core\clip.cpp" />
+    <ClCompile Include="..\..\src\snes\core\conffile.cpp" />
+    <ClCompile Include="..\..\src\snes\core\controls.cpp" />
+    <ClCompile Include="..\..\src\snes\core\cpu.cpp" />
+    <ClCompile Include="..\..\src\snes\core\cpuexec.cpp" />
+    <ClCompile Include="..\..\src\snes\core\cpuops.cpp" />
+    <ClCompile Include="..\..\src\snes\core\crosshairs.cpp" />
+    <ClCompile Include="..\..\src\snes\core\data.cpp" />
+    <ClCompile Include="..\..\src\snes\core\debug.cpp" />
+    <ClCompile Include="..\..\src\snes\core\dma.cpp" />
+    <ClCompile Include="..\..\src\snes\core\dsp1.cpp" />
+    <ClCompile Include="..\..\src\snes\core\fxdbg.cpp" />
+    <ClCompile Include="..\..\src\snes\core\fxemu.cpp" />
+    <ClCompile Include="..\..\src\snes\core\fxinst.cpp" />
+    <ClCompile Include="..\..\src\snes\core\gfx.cpp" />
+    <ClCompile Include="..\..\src\snes\core\globals.cpp" />
+    <ClCompile Include="..\..\src\snes\core\loadzip.cpp" />
+    <ClCompile Include="..\..\src\snes\core\logger.cpp" />
+    <ClCompile Include="..\..\src\snes\core\memmap.cpp" />
+    <ClCompile Include="..\..\src\snes\core\movie.cpp" />
+    <ClCompile Include="..\..\src\snes\core\netplay.cpp" />
+    <ClCompile Include="..\..\src\snes\core\obc1.cpp" />
+    <ClCompile Include="..\..\src\snes\core\ppu.cpp" />
+    <ClCompile Include="..\..\src\snes\core\reader.cpp" />
+    <ClCompile Include="..\..\src\snes\core\sa1.cpp" />
+    <ClCompile Include="..\..\src\snes\core\sa1cpu.cpp" />
+    <ClCompile Include="..\..\src\snes\core\screenshot.cpp" />
+    <ClCompile Include="..\..\src\snes\core\sdd1.cpp" />
+    <ClCompile Include="..\..\src\snes\core\sdd1emu.cpp" />
+    <ClCompile Include="..\..\src\snes\core\server.cpp" />
+    <ClCompile Include="..\..\src\snes\core\seta.cpp" />
+    <ClCompile Include="..\..\src\snes\core\seta010.cpp" />
+    <ClCompile Include="..\..\src\snes\core\seta011.cpp" />
+    <ClCompile Include="..\..\src\snes\core\seta018.cpp" />
+    <ClCompile Include="..\..\src\snes\core\snaporig.cpp" />
+    <ClCompile Include="..\..\src\snes\core\snapshot.cpp" />
+    <ClCompile Include="..\..\src\snes\core\snes9x.cpp" />
+    <ClCompile Include="..\..\src\snes\core\soundux.cpp" />
+    <ClCompile Include="..\..\src\snes\core\spc700.cpp" />
+    <ClCompile Include="..\..\src\snes\core\spc7110.cpp" />
+    <ClCompile Include="..\..\src\snes\core\srtc.cpp" />
+    <ClCompile Include="..\..\src\snes\core\tile.cpp" />
+    <ClCompile Include="..\..\src\snes\snes.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

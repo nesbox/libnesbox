@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libnesbox", "libnesbox.vcxproj", "{8CBF0375-79C1-49DD-A6C7-72837F3501C9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nes", "nes\nes\nes.vcxproj", "{3D32AC18-90C0-499B-BF10-1AEC8ED2854C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "snes", "snes\snes\snes.vcxproj", "{A0690540-051E-4DE5-9332-2C221B779EC4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sega", "sega\sega\sega.vcxproj", "{DEC66663-FBFF-47BD-9781-0ED723AFBABE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gb", "gb\gb\gb.vcxproj", "{5D75428F-053B-4DF4-AE26-B5B33879C72F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CBF0375-79C1-49DD-A6C7-72837F3501C9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8CBF0375-79C1-49DD-A6C7-72837F3501C9}.Debug|Win32.Build.0 = Debug|Win32
+		{8CBF0375-79C1-49DD-A6C7-72837F3501C9}.Release|Win32.ActiveCfg = Release|Win32
+		{8CBF0375-79C1-49DD-A6C7-72837F3501C9}.Release|Win32.Build.0 = Release|Win32
+		{3D32AC18-90C0-499B-BF10-1AEC8ED2854C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3D32AC18-90C0-499B-BF10-1AEC8ED2854C}.Debug|Win32.Build.0 = Debug|Win32
+		{3D32AC18-90C0-499B-BF10-1AEC8ED2854C}.Release|Win32.ActiveCfg = Release|Win32
+		{3D32AC18-90C0-499B-BF10-1AEC8ED2854C}.Release|Win32.Build.0 = Release|Win32
+		{A0690540-051E-4DE5-9332-2C221B779EC4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A0690540-051E-4DE5-9332-2C221B779EC4}.Debug|Win32.Build.0 = Debug|Win32
+		{A0690540-051E-4DE5-9332-2C221B779EC4}.Release|Win32.ActiveCfg = Release|Win32
+		{A0690540-051E-4DE5-9332-2C221B779EC4}.Release|Win32.Build.0 = Release|Win32
+		{DEC66663-FBFF-47BD-9781-0ED723AFBABE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DEC66663-FBFF-47BD-9781-0ED723AFBABE}.Debug|Win32.Build.0 = Debug|Win32
+		{DEC66663-FBFF-47BD-9781-0ED723AFBABE}.Release|Win32.ActiveCfg = Release|Win32
+		{DEC66663-FBFF-47BD-9781-0ED723AFBABE}.Release|Win32.Build.0 = Release|Win32
+		{5D75428F-053B-4DF4-AE26-B5B33879C72F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5D75428F-053B-4DF4-AE26-B5B33879C72F}.Debug|Win32.Build.0 = Debug|Win32
+		{5D75428F-053B-4DF4-AE26-B5B33879C72F}.Release|Win32.ActiveCfg = Release|Win32
+		{5D75428F-053B-4DF4-AE26-B5B33879C72F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

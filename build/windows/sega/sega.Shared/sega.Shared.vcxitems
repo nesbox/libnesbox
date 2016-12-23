@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{ff3a68f3-fe14-428d-b78d-886ce9f0291a}</ItemsProjectGuid>
+    <ItemsRootNamespace>sega</ItemsRootNamespace>
+    <ItemsProjectName>sega.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\sega.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\cz80\cz80.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\fm.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\md.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\mdfr.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\mem.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\musa\m68kcpu.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\musa\m68kopac.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\musa\m68kopdm.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\musa\m68kopnz.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\musa\m68kops.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\myfm.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\ras.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\save.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\sn76496.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\core\vdp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\sega\sega.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+</Project>

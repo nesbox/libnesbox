@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{82dba33b-752f-4c00-8299-94844a1e3870}</ItemsProjectGuid>
+    <ItemsRootNamespace>gb</ItemsRootNamespace>
+    <ItemsProjectName>gb.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\gameboy.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)targetver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\apu\Blip_Buffer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\apu\Effects_Buffer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\apu\Gb_Apu.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\apu\Gb_Apu_State.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\apu\Gb_Oscs.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\apu\Multi_Buffer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\agbprint.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\armdis.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\bios.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\CheatSearch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\EEprom.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\elf.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\GBA-arm.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\GBA-thumb.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\GBA.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\GbaCheats.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\gbafilter.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\GbaFlash.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\GBAGfx.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\GbaGlobals.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\GBALink.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\GBASockClient.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\GbaSound.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\Mode0.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\Mode1.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\Mode2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\Mode3.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\Mode4.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\Mode5.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gba\Sram.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gb\GB.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gb\gbCheats.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gb\gbDis.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gb\gbGfx.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gb\gbGlobals.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gb\gbMemory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gb\gbPrinter.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gb\gbSGB.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\gb\gbSound.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\core\Util.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\src\gb\gameboy.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+</Project>
