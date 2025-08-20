@@ -63,3 +63,4 @@ build/windows/sega/sega.Windows/x64/
 build/windows/snes/snes.Windows/x64/
 build/android/obj/
 build/android/libs/
+.DS_Store

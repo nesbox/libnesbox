@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="NESBOX - Javascript NES/SNES/SEGA/Gameboy emulator">
+	<meta name="author" content="Nesbox">
+	<meta property="og:title" content="nesbox.com - Javascript NES/SNES/SEGA/Gameboy emulator">
+	<meta property="og:image" content="http://nesbox.com/img/logo.png">
+	<meta property="og:site_name" content="nesbox.com - Javascript NES/SNES/SEGA/Gameboy emulator">
+	<meta property="og:description" content="NESBOX - Javascript NES/SNES/SEGA/Gameboy emulator">
+
+	<title>nesbox.com - Javascript NES/SNES/SEGA/Gameboy emulator</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<script src="/js/jquery.min.js"></script>
+
+	<link rel="shortcut icon" href="/favicon.ico">
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="text-center">
+			<a href="/"><img src="/img/logo.png" width="100" height="100"></a>
+			
+			<h1>NESBOX</h1>
+			<h3 class="text-muted">Javascript NES/SNES/SEGA/Gameboy emulator</h3>
+		</div>
+
+		<hr>
+
+
+
+
+	<div style="height: 480px; width: 640px; background-color: #000000; margin: 0 auto;">
+		<div id="game-placeholder" style="position: relative;">
+
+			<div style="display: block; position: absolute; left: 0px; top: 0px; opacity: .8; cursor: pointer;">
+				<img width="640" src="/img/start.gif">
+			</div>
+
+		</div>
+		
+		<iframe id="game-frame" style="display: none;" msallowfullscreen="true" width="100%" mozallowfullscreen="true" frameborder="0" scrolling="no" allowtransparency="false" allowfullscreen="true" height="100%" webkitallowfullscreen="true" value="/embed"></iframe>
+
+	</div>
+
+	<div style="width: 640px; margin: 0 auto;">
+		<p class="text-center"><strong>click on the emulator window to start</strong></p>
+		<hr>
+		<h4>
+			<p class="text-center">
+				<a href="https://tic80.com"><img src="https://tic80.com/img/logo64.png"></a>				
+			</p>
+			If you not only want to play retro games but want to create a game, try my another one project <a href="https://tic80.com">TIC-80</a>, it's a fantasy computer for making, playing and sharing tiny games.
+		</h4>
+		<hr>
+		<p>The emulator loads ROM files from your OneDrive account</p>
+		<p>Gamepad buttons mapping: <strong>ARROWS</strong>, <strong>A</strong>, <strong>B</strong>, <strong>X</strong>, <strong>Y</strong>, <strong>SELECT</strong> - left shoulder, <strong>START</strong> - right shoulder, <strong>L</strong> - left trigger, <strong>R</strong> - right trigger.</p>
+		<p>Keyboard buttons mapping: <strong>ARROWS</strong>, <strong>A</strong> - z, <strong>B</strong> - x, <strong>X</strong> - a, <strong>Y</strong> - s, <strong>SELECT</strong> - spacebar, <strong>START</strong> - enter, <strong>L</strong> - q, <strong>R</strong> - w.</p>
+		<p><strong>Features</strong>: </p>
+		<ul><li> supports <strong>NES</strong>, <strong>SNES</strong>, <strong>GENESIS</strong>, <strong>GAMEBOY </strong>and <strong>ADVANCE </strong>systems: .nes .smc .sfc .gen .smd .mb .bin .gba .gbc .gb;</li><li>save/load game state;</li><li>local multiplayer (two controllers);</li><li>import roms from OneDrive;</li><li>save game state to OneDrive;</li><li>gamepad buttons mapping;</li></ul>
+		<p><strong>CHANGELOG v4:</strong></p>
+		<ul><li>added OneDrive save states;</li><li>removed local storage;</li><li>gamepad stick support;</li><li>some minor fixes;</li></ul>
+		<hr>
+		<p>To start playing click on the emulator window, sign in OneDrive (only once at the start) and if all is OK click again to enable <strong>FULLSCREEN</strong> mode (gamepad input works only in fullscreen mode).</p>
+		<p>You should have a ROM file to play a game and upload it via <strong>OneDrive.</strong><br></p>
+		<p>Use <strong>(A)</strong> to select item in menu and <strong>(B)</strong> to go back.</p>
+		<p>Press <strong>SELECT+START</strong> to show game menu (save/load/reset).</p>
+		<p>Select <strong>MENU &gt; USE BROWSING CONTROLS</strong> to show browser cursor.</p>
+		<p>If you want to be in touch follow me <a href="https://twitter.com/nesboxcom" target="_blank">@nesboxcom</a><br></p>
+		
+	</div>
+
+	<script type="text/javascript">
+	$(function()
+	{
+		$('#game-placeholder').click(function()
+		{
+			$(this).remove();
+
+			var gameFrame = $('#game-frame');
+
+			gameFrame.attr('src', gameFrame.attr('value')).show().focus();
+		});		
+	});
+
+	</script>
+
+	</div>
+
+	<footer class="footer" style=" margin-bottom: 20px;">
+
+		<div class="container">
+
+			<hr>
+
+			<div class="pull-right">
+				<a title="@nesboxcom" rel="tooltip" href="https://twitter.com/nesboxcom">Twitter</a> <span class="text-muted">|</span>
+				<a title="support@nesbox.com" rel="tooltip" href="mailto:support@nesbox.com">Support</a>
+			</div>
+			
+			<div class="pull-left">2025 Nesbox</div>
+		</div>
+		
+	</footer>
+
+	<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
